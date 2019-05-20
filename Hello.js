@@ -4,7 +4,7 @@
 var http = require ("http");
 var fs = require ("fs");
 var url = require("url");
-const PORT = process.env.PORT | 5000
+const PORT = process.env.PORT || 5000
 
 http.createServer(function (req, res) {
 	var q = url.parse(req.url, true);
